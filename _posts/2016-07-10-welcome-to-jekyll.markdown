@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Initial post"
+title:  "Welcome!"
 date:   2016-07-10 12:56:07 +0100
 categories: fun 
 ---
