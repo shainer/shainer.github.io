@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Calamares news"
+date:   2016-07-19 16:19:00 +0100
+categories: chakra calamares software opensource 
+---
 Metaphor of all software development: I keep trying to add features to a project, only
 to uncover bugs that need to be solved before I can go on :D
 
