@@ -10,7 +10,7 @@ to uncover bugs that need to be solved before I can go on :D
 Some of them are very interesting, and once I manage to find the root cause they will
 likely warrant their own posts.
 
-However, in better news, [https://github.com/calamares/calamares](Calamares) now has
+However, in better news, [Calamares](https://github.com/calamares/calamares) now has
 support for installing groups of packages during the system installation. It will
 be part of the new release. This was added by @AlmAck and I so that we would be able
 to ship lightweight, minimal Chakra ISOs with only a small set of required packages
