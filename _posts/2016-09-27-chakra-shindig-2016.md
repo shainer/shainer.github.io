@@ -58,7 +58,7 @@ To add to the general coolness we also 3d printed several objects shaped like th
 ### The location
 I cannot thank Luca enough for deciding to organize this meeting at his place. The scenery was amazing all around. In the morning, I would walk from my B&B to the cottage and see the mountains towering all around me; at the right time, the sunrays strike the tops of the mountains, and create an impressive effect.
 
-[View of the mountains](../images/Frasco_church.jpg)
+[View of the mountains]({{ site.url }}/images/Frasco_church.jpg)
 
 Enough with the romanticism, now back to work...
 
