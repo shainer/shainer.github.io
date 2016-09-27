@@ -28,12 +28,12 @@ This was for me the best part of the meeting. The practical work is obviously ea
 Bringing the contributors around a table means several long-standing points were "closed" in a few hours of work.
 
 We discussed several points brought by contributors, and some raised by our users in the [Chakra brainstorming forum thread](https://chakralinux.org/forum/viewtopic.php?id=14692). The official announcement will go into more details, but this is what I am mostly happy about:
+
 * [Gitlab](http://gitlab.com). Having a centralized "project management" platform is a big step forward; user support, bug tracking, code, etc... will be all collected in a single place, and with a single sign-in.
 * Improvements to the main pages of the [Chakra website](http://chakralinux.org): the purpose is to give more visibility to all contributions, and to showcase our current efforts to curious people.
 * We discussed the pros and cons of becoming an official KDE project. The path is long and there is no final decision yet, but I am excited to see how that will go.
 * We "scanned" many years-old bugs and decided their fate.
 * We had a [key signing party](https://en.wikipedia.org/wiki/Key_signing_party) to improve the trust of the keys we sign the packages with. I feel like I have acquired many nerd points now :-D The public keys are available at [pgp.mit.edu](http://pgp.mit.edu).
-
 
 [Picture](http://xkcd.com/364): what signing my key was NOT (hopefully).
 
