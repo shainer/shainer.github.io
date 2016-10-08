@@ -9,6 +9,7 @@ of them may be obsolete by now.
 
 *  [PyQt](http://www.python.it/wiki/show/qttutorial): tutorial in Italian to use the PyQt library. The link redirects
 to the python.it website, where the guide is hosted.
+*  [Flex](tutorials/flex.md): introduction to writing basic scanners with Flex.
 *  [The Git Handbook](https://www.gitbook.com/book/shainer/git-handbook/details): handbook on Git, hosted on my account
 on Gitbook. This guide is aimed at people looking for a short and easy overview of the most popular features of Git,
 or people looking for a reference for common procedures.

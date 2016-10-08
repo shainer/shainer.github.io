@@ -1,0 +1,123 @@
+# Flex
+
+[Flex](http://flex.sourceforge.net) is an open­source generator of lexical analyzers, also called scanners.
+
+The scanners can parse a data stream (file or buffered string), recognize patterns, and execute actions when this happens.
+
+This tutorial is an introduction to this tool.
+
+### Input file
+In order to generate the scanner (a C program), Flex needs an input file defining the rules the scanner will operate with. Flex rule files use the .lpp extension. A file is divided in three sections:
+
+```
+definitions
+%%
+rules
+%%
+code
+```
+
+On top of the file you can also add _top blocks_; the code there will be executed before anything else in the scanners' code:
+
+```
+%top {
+  // all code here executed first
+}
+```
+
+Top blocks usually contain preprocessor directives.
+
+### Definitions
+
+You usually start by defining options that control the behaviour of the Flex scanner. Here are some common options:
+
+```%option header­file=”header.h”```
+creates an header file.
+
+```%option noyywrap```
+the scanner stops at the EOF of the current input, i.e. it assumes there is nothing more to parse.
+
+```%option outfile=”scanner.c”``` scanner's name (default ```lex.yy.c```)
+
+```%option warn``` enables warnings
+
+Sometimes it's useful to associate regular expressions used in the scanner with names easy to remember, so that the
+generated code is more readable.
+
+Example:
+
+```DIGIT [0­9]``` Every use of {DIGIT} inside a rule will be translated into [0­9].
+
+### Rules
+This is the heart of the scanner. The classical rule is:
+
+```
+regexp   { action }
+```
+
+Flex supports an extended set of regular expressions; you can find a reference on the website.
+
+When flex matches a pattern in the stream, the match is copied in a variable, ```char *yytext``` (or in char yytext[] if you used
+%array); the length is contained in ```yyleng```.
+
+The action, which is a regular C code snippet, is executed. The action part should be separated by the regexp by at least one whitespace.
+
+If no action matches a given pattern, all the occurrences of that pattern will be deleted from the output.
+
+
+Everything that doesn't match any pattern is printed in output as it is (default rule).
+There are several special instructions that can be used in the actions:
+
+- ```ECHO```: prints out yytext (the match);
+- ```input()```: reads the next character in the stream;
+- ```yyterminate()```: exits with success.
+
+### Start conditions
+
+Start conditions allow you to define "states" inside the scanner, and directive such as "execute this action if there is a match and the scanner is in this state". Your scanner can then become a state machine. All the conditions must be declared in the definition section:
+
+```
+%s cond1 cond2
+```
+
+With
+
+```
+<cond1>pattern1 {action1;}
+```
+action1 is executed only if, when the scanner found pattern1, flex was in that condition. At the
+beginning, flex is in the INITIAL condition. Then
+
+```
+pattern0 {BEGIN(cond1);}
+```
+
+moves the scanner in the cond1 condition when pattern0 is found. You can also write ```BEGIN(INITIAL)``` to go back to the INITIAL state.
+
+### Buffers
+By default, the scanner reads its tokens from the standard input. If we want to trigger manually the
+parsing, we can make  the scanner read from a particular file:
+
+```
+yyset_in(fpointer);
+int ret = yylex();
+```
+
+Don't forget to include the header if these instructions are in a different file. Other utility functions include:
+
+```
+YY_BUFFER_STATE yy_create_buffer(FILE *f, int size);
+```
+
+creates a buffer file with the given size  (if
+unsure, use YY_BUF_SIZE). The returned variable is useful for other functions.
+
+```
+void yy_delete_buffer (YY_BUFFER_STATE buf);
+```
+deallocates the given buffer.
+
+```
+YY_BUFFER_STATE yy_scan_string(const char *s);
+```
+scans a string.
