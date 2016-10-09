@@ -11,6 +11,7 @@ I am a regular geek. My main interests:
 *  Artificial Intelligence, especially Natural Language Processing and Machine Learning.
 *  Programming. I am familiar with C++, Python and Java, in order of preference. I have also used Qt extensively.
 *  Algorithms and complexity theory.
+*  Free software.
 *  Recently, cryptography and cryptoanalysis.
 
 I have been a regular GNU/Linux user since 2005. I am a contributor for [Chakra Linux](http://chakralinux.org),
@@ -24,5 +25,4 @@ or on [Bitbucket](http://bitbucket.org/shainer), but I have plans to move everyt
 
 My non-computer interests include reading fantasy and science-fiction, baking, physics, and logic or math puzzles.
 
-Contact me at lisavitolo90 at gmail dot com.
-
+Contact me at syn.shainer@gmail.com .
