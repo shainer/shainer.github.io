@@ -5,8 +5,6 @@ date:   2016-10-17 21:04:00 +0100
 categories: crypto random matasano 
 ---
 
-# Mersenne Twister, part 1: a primer on PRNGs
-
 Another post sponsored by the [Matasano Crypto Challenges](https://cryptopals.com). Today I am looking back at older challenges, and at the interesting world of pseudo-random number generators, or PRNGs.
 
 As this is a very broad topic, I am going to divide it in multiple posts. We start with a generic discussion on PRNGs, and then we'll look into how Mersenne Twister works, why it is widely used, and what attacks I have implemented as part of the challenges.
