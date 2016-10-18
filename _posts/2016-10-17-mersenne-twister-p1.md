@@ -13,6 +13,7 @@ As this is a very broad topic, I am going to divide it in multiple posts. We sta
 When talking about random number generators for computer applications, we usually refer to pseudo-random number generators.
 
 A good PRNG needs to have two main features:
+
 - it can be _expanded forever_, i.e. it is always possible to generate a new random bit from it.
 - there is no _efficient_ algorithm that can distinguish the output of a PRNG from that of a random generator, i.e. one that selects a number from a set with a _uniform probability distribution_.
 
@@ -23,6 +24,7 @@ So a PRNG is not truly random, but for cryptographic purposes, we care about an 
 ### Definition
 
 A RNG (pseudo-random or not) is composed of:
+
 - S: finite state space
 - O: finite output space
 - I: input space
@@ -37,7 +39,7 @@ There are two main categories of PRNGs.
 In a [LCG](https://en.wikipedia.org/wiki/Linear_congruential_generator), the next output of the sequence can be computed as:
 
 ```
-X(n+1) = a*X(n)+b mod m.
+X(n+1) = a*X(n)+b mod m
 ```
 
 So once the parameters A, B and M are chosen, the whole sequence depends on X(0), the **seed**. The transition function has no input, instead the input is only used when producing the seed.
