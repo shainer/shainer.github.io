@@ -33,7 +33,7 @@ All of this were feature requests on the Issue Tracker. Features I left aside fo
 #### Edit Oct 31, 2016
 I tested the dialog on a newly-released Chakra Goedel, the [new beta ISO](https://rsync.chakralinux.org/releases/testing/). After a few bugfixes and some documentation, I created the [pull request](https://github.com/calamares/calamares/pull/270).
 
-[A preview of the module]({{ site.url }}/images/vb-chakra-goedel-users-view.png) while testing in VirtualBox. Sorry, no fancy preview of Chakra :-)
+![Testing the module]({{ site.url }}/images/vb-chakra-goedel-users-view.png) A preview of the module while testing in VirtualBox. Sorry, no fancy preview of Chakra :-) See [full size image]({{ site.url }}/images/vb-chakra-goedel-users-view.png)
 
 
 ### Website
