@@ -4,7 +4,6 @@ title:  "A summary on online misinformation"
 date:   2016-12-13 12:00:00 +0100
 categories: nlp statistics 
 ---
-
 Not so long ago, I mentioned "hating bad news" and planning to implement a clickbait classifier. But obviously bad news are not limited to articles with a clickbait title. Inspired by a reference on a debunking blog, I had a look at some of the recent scientific literature on the spreading of misinformation over the Internet.
 
 In this article I will summarize some interesting things I have found. All material is linked in full form in the References section at the end of the post.
@@ -73,4 +72,3 @@ Two models were trained, one with Logistical Regression and one with Gradient Bo
 * [The spreading of misinformation online](http://www.pnas.org/content/113/3/554.abstract), Del Vicario et al., 2015
 * [Trend of narratives in the age of misinformation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134641), Bessi et al., 2015
 * [Identifying clickbaits using machine learning](https://www.linkedin.com/pulse/identifying-clickbaits-using-machine-learning-abhishek-thakur)
-
