@@ -56,6 +56,7 @@ Big data analysis has been performed on a corpus of public data retrieved with t
 Four main categories for misinformative articles were listed: geopolitics, diet, health and environment. Term occurrence and co-occurrence was used on the corpus to derive which words are more likely to appear, or to appear together, in each category.
 
 Then consumption of the content by the users has been studied, in terms of:
+
 - **average distance** between first and last comment on a post;
 - **sentiment analysis of comments**: positive, negative or neutral? Note that negative here does not imply a disagreement with the content of the post, but rather whether the tone expresses unhappiness, indignation etc. rather than being optimistic in nature.
 - **user persistence**: how much are users active on known "misinformation" pages? Does this imply they are more likely to become active on other similar pages?
@@ -67,6 +68,7 @@ There were no significant differences discovered between consumption in the four
 I am of course not the first to undertake this task :-) The most complete paper I could find has been published on LinkedIn a few months ago.
 
 In this implementation, the goal is to assign to each title a probability of the title being a clickbait, between 0 and 1. Two main features have been used:
+
 - identification of the more clickbaity and less clickbaity n-grams, using TF-IDF. Turns out that numbers are very clickbaity; many such articles are organized as lists for easy consumption, so titles like "15 things you never knew about X!" were common enough in the corpus to generate this result.
 - Word2Vec: every word or n-gram in the corpus is represented as a multi-dimensional vector. Words with similar meaning should be "close" in terms of distance between the vectors. This allows to find more clickbaity words that did not  show up in the previous analysis, and also to remove some N-grams that the previous feature marked as clickbaity for tangential reasons, such as "Donald Trump".
 
@@ -74,6 +76,7 @@ Two models were trained, one with Logistical Regression and one with Gradient Bo
 
 
 ### References
+
 * [Digital wildfires in a hyperconnected world](http://reports.weforum.org/global-risks-2013/risk-case-1/digital-wildfires-in-a-hyperconnected-world/), report by WEF, 2013.
 * [The spreading of misinformation online](http://www.pnas.org/content/113/3/554.abstract), Del Vicario et al., 2015
 * [Trend of narratives in the age of misinformation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134641), Bessi et al., 2015
