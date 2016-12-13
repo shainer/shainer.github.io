@@ -17,7 +17,7 @@ section at the end of the post.
 Brace yourself, this is going to be a long one!
 
 ### The background
-Most papers or articles mentioned the same report, produced by the World Economic Forum in 2013.
+Most papers or articles mentioned the same report, produced by the World Economic Forum in 2013 [1].
 
 In this report, it is commented how the Internet enables pretty much everybody to become the source of widely-spread information, whether true or not. This contrasts with the past, where it was still possible, but restricted to the few "powers" with the practical means to reach many people at once (e.g. large TV stations).
 
@@ -28,7 +28,7 @@ The report then discusses possible actions to take to combat these so-called _di
 This is very similar to what many large IT companies, such as Facebook, have been proposing these days.
 
 ### The spread of online misinformation
-This is the study I started with. Here the analysis is also focused on how Internet communities, and users, are influenced by the spread of conspiracy theories or other forms of misinformation. 
+In this paper [2], which was my starting point, the analysis is also focused on how Internet communities, and users, are influenced by the spread of conspiracy theories or other forms of misinformation. 
 
 The authors prepared three datasets: one with sound scientific news, one with conspiracy theories, and a third control set with articles taken from "troll news sites", i.e. sites that intentionally spread fake news in order to mock. The elements of the two main sets are discriminated based on the verifiability of the content.
 
@@ -49,7 +49,7 @@ _Personal note_: there is quite a bit of statistical modeling theory applied her
 As a final validation, a model of rumour spreading is built and tested. In this model, news are initially shared by a group of users. Each article is assigned a fitness, i.e. the opinion it conveys. A user is more likely to reshare when the fitness is closer to its own opinion (with a fixed threshold). Both fitnesses and opinions are uniformly distributed, and independent with each other. Finally, link homogeneity is added as a factor that lets a user decide whether to reshare or not. The model has been found to simulate the real data very significantly.
 
 ### Trend of narratives
-Another paper tried to classify the type of misinformation we see, and how users react to each different type.
+Another paper [3] tried to classify the type of misinformation we see, and how users react to each different type.
 
 Big data analysis has been performed on a corpus of public data retrieved with the Facebook API: posts, likes and comments.
 
@@ -65,7 +65,7 @@ There were no significant differences discovered between consumption in the four
 
 
 ### Another clickbait classifier
-I am of course not the first to undertake this task :-) The most complete paper I could find has been published on LinkedIn a few months ago.
+I am of course not the first to undertake this task :-) The most complete paper I could find has been published on LinkedIn a few months ago [4].
 
 In this implementation, the goal is to assign to each title a probability of the title being a clickbait, between 0 and 1. Two main features have been used:
 
@@ -77,8 +77,8 @@ Two models were trained, one with Logistical Regression and one with Gradient Bo
 
 ### References
 
-* [Digital wildfires in a hyperconnected world](http://reports.weforum.org/global-risks-2013/risk-case-1/digital-wildfires-in-a-hyperconnected-world/), report by WEF, 2013.
-* [The spreading of misinformation online](http://www.pnas.org/content/113/3/554.abstract), Del Vicario et al., 2015
-* [Trend of narratives in the age of misinformation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134641), Bessi et al., 2015
-* [Identifying clickbaits using machine learning](https://www.linkedin.com/pulse/identifying-clickbaits-using-machine-learning-abhishek-thakur)
+1 [Digital wildfires in a hyperconnected world](http://reports.weforum.org/global-risks-2013/risk-case-1/digital-wildfires-in-a-hyperconnected-world/), report by WEF, 2013.
+1 [The spreading of misinformation online](http://www.pnas.org/content/113/3/554.abstract), Del Vicario et al., 2015
+1 [Trend of narratives in the age of misinformation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134641), Bessi et al., 2015
+1 [Identifying clickbaits using machine learning](https://www.linkedin.com/pulse/identifying-clickbaits-using-machine-learning-abhishek-thakur)
 
