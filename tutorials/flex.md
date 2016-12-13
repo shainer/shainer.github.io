@@ -31,7 +31,7 @@ Top blocks usually contain preprocessor directives.
 
 You usually start by defining options that control the behaviour of the Flex scanner. Here are some common options:
 
-```%option header­file="header.h" ```
+```%option headerfile="header.h" ```
 creates and header file.
 
 ```%option noyywrap```
@@ -46,7 +46,7 @@ Sometimes it's useful to associate regular expressions used in the scanner with 
 
 Example:
 
-```DIGIT [0­9]``` Every use of {DIGIT} inside a rule is replaced with [09].
+```DIGIT [09]``` Every use of {DIGIT} inside a rule is replaced with [09].
 
 ### Rules
 This is the heart of the scanner. The standard syntax is:
