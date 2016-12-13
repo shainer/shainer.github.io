@@ -19,5 +19,5 @@ solutions are public on [Github](https://github.com/shainer/matasano). This book
 the public challenges, explaining the theory necessary to understand why something works in a certain way.
 The book, as the solutions, is work-in-progress.
 
-Contributions to any of this are welcome; for guides hosted on Gitbook you can use Gitbook directly to contribute.
+Contributions and feedback to any of this are welcome; for guides hosted on Gitbook you can use Gitbook directly to contribute.
 
