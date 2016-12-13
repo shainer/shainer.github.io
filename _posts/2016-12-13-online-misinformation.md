@@ -77,8 +77,8 @@ Two models were trained, one with Logistical Regression and one with Gradient Bo
 
 ### References
 
-1 [Digital wildfires in a hyperconnected world](http://reports.weforum.org/global-risks-2013/risk-case-1/digital-wildfires-in-a-hyperconnected-world/), report by WEF, 2013.
-1 [The spreading of misinformation online](http://www.pnas.org/content/113/3/554.abstract), Del Vicario et al., 2015
-1 [Trend of narratives in the age of misinformation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134641), Bessi et al., 2015
-1 [Identifying clickbaits using machine learning](https://www.linkedin.com/pulse/identifying-clickbaits-using-machine-learning-abhishek-thakur)
+1. [Digital wildfires in a hyperconnected world](http://reports.weforum.org/global-risks-2013/risk-case-1/digital-wildfires-in-a-hyperconnected-world/), report by WEF, 2013;
+1. [The spreading of misinformation online](http://www.pnas.org/content/113/3/554.abstract), Del Vicario et al., 2015
+1. [Trend of narratives in the age of misinformation](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0134641), Bessi et al., 2015
+1. [Identifying clickbaits using machine learning](https://www.linkedin.com/pulse/identifying-clickbaits-using-machine-learning-abhishek-thakur)
 
