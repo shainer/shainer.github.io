@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Anitya for Chakra"
+title:  "Anitya for Chakra (with updates!)"
 date:   2017-02-19 18:20:00 +0100
 categories: chakra
 ---
@@ -25,6 +25,9 @@ File "anitya-0.11.0/anitya/lib/backends/__init__.py", line 132, in rpm_cmp
 ```
 
 On the flipside, the error page looks pretty nice :D And this is where I stop, for today. As soon as I find time, I may fork the project and make a version comparison that works for Chakra.
+
+**Update**: the Anitya team has replied on my bug. They approve of removing the dependency on RPM, so I will prepare a pull request once tested. The Google login is broken since it stopped supporting OpenID connect.
+I could work on that too, but I have much more limited knowledge of OAuth2 and friends so I will try but no guarantee I'll produce a working patch.
 
 In the meantime, thanks to [OSSBlog](https://www.ossblog.org/markdown-editors/), I  put a stop to my search for a good Markdown editor. [Haroopad](http://pad.haroopress.com/) wins the contest. The only feature I don't like is that it seems to handle one file at a time; when you open a new one, the previous one cannot be accessed in any way that I could see. Good enough for what I need it, but I may change my mind in the future.
 Too bad for Atom, which I would have also appreciated as an IDE for programming, but it requires nodejs 6.x, and Chakra packages 7.5.0. I could use NVM to manage which version I keep installed, since I don't even need it for anything else, but that's more work I want to put right now.
