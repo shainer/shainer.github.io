@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fish shell"
-date:   2017-02-16 17:20:00 +0100
+date:   2017-07-16 17:20:00 +0100
 categories: linux
 ---
 
