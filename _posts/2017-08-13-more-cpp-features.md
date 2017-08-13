@@ -40,7 +40,7 @@ a ```span``` of the array (which might or might not contain all the elements) is
 represent a view of the array, and passed to any function. All the information about size are contained
 internally.
 
-```array_view``` (which has a more descriptive way) works the same way, but unlike ```span``` it's a read-only
+```array_view``` (which has a more descriptive name) works the same way, but unlike ```span``` it's a read-only
 view of the original array. This is preferrable to ensure no function can write on what is a view of another
 data structure, without having to enforce constness instead.
 
@@ -61,8 +61,8 @@ custom error codes you need. By subclassing ```std::error_category``` you define
 with some nice functionalities such as associating an error message to each code.
 
 Moving forward, it's also possible to express complex groupings and conditions on your set of errors by using ```std::error_condition```.
-Let's say that all of your errors fall into the following sub-categories: internal errors (something happens inside your program) and
-external errors (due to e.g. networking). You can extend the logic of your category with a function that tells you which sub-category
+Let's say that all of your errors fall into the following sub-categories: **internal errors** (something happens inside your program) and
+**external errors** (due to e.g. networking). You can extend the logic of your category with a function that tells you which sub-category
 a given code belongs to.
 
 Personal opinion: this is not trivial to use, and requires more boilerplate than usual for the initial set up of codes and categories.
