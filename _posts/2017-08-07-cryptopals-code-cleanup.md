@@ -7,7 +7,7 @@ categories: matasano cleanup
 
 I started the Github repository for the Matasano crypto challenges mostly for myself. It's not software with actual users, so I didn't pay a lot of attention to code health or general organization.
 
-But as I kept adding more files, and referencing my code in posts, I realized it was a pretty bad shape and it would benefit from some love. So I went back nand reorganized all the files, making sure viewers (and myself) can easily figure out what Python file is a binary you run to solve a given challenge, and what is a library used to abstract common operations. The README also gives more information about the status of the work and what dependencies the applications have.
+But as I kept adding more files, and referencing my code in posts, I realized it was a pretty bad shape and it would benefit from some love. So I went back nand reorganized all the files, making sure viewers (and myself) can easily figure out which Python file is a binary you run to solve a given challenge, and which is a library used to abstract common operations. The README also gives more information about the status of the work and what dependencies the applications have.
 
 Therefore I officially apologize to the people who looked at it or forked it when it was in a much worse shape :-)
 
