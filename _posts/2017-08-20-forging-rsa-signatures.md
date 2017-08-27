@@ -53,17 +53,19 @@ Now let's take the sub-block composed of the last 00 byte, the ASN.1 code, and t
 ```
 Block = '00 ASN.1 HASH'
 D = int(Block)
-N = 2 ** len(Block) - D
+N = 2^len(Block) - D
 ```
 
 Now let's say that our RSA key has length 2048 bits; with the format above, there are going to be (2048 - 52 - 3) bits left on the right for garbage. Let's call this number X. The numeric block is going to be:
 
 ```
 2 ^ (2048 - 15) - 2 ^ (X + len(Hash)) + D * 2^X + garbage
-2 ^ (2048 - 15) - N * (2 ** X) + garbage
+2 ^ (2048 - 15) - N * (2^X) + garbage
 ```
 
-**Disclaimer**: this is where I get lost, sadly. I don't understand what the 15 bits subtracted from the key size represent, or why the two equations above are equivalent. If somebody reads this and wants to send me an email for a more complete explanation, they are welcome to do it!
+**Edit**: the second equation follows from the first quite easily if you remember that according to the definition above, ```N = 2^len(Block) - D```, and therefore, ```D = 2^len(Block) - N```.
+
+**Disclaimer**: this is where I get lost, sadly. I don't understand what the 15 bits subtracted from the key size represent. If somebody reads this and wants to send me an email for a more complete explanation, they are welcome to do it!
 
 From empirical evaluation, it seems that for the garbage number you should prefer higher values: the lowest cube roots might end up being encoded in something that does not quite contain the full hash at the end, possibly because we run out of bits to convert before that. This is why my code takes a shortcut and just sets it to the highest number possible given the allowed number of bits.
 
