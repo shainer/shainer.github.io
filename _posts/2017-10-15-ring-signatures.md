@@ -32,9 +32,9 @@ Indeed the original article I linked uses a different one.
 The second desirable property of this ring signature scheme is that adding a new ring member is efficient: both the generation
 and verification procedures only need to compute one extra modular multiplication and one symmetric encryption. Pretty good :)
 
-# Details
+## Details
 
-## The setup
+### The setup
 
 Each signer in the ring is associated with a public key ```Pi``` and the generation scheme is known. All of them use the same scheme
 (let's assume RSA for simplicity). Note that the moduli N of each key could have different bit sizes; to work around this problem,
@@ -59,7 +59,7 @@ arbitrary values Y, each composed of b bits. Each function will use ```E(k)``` t
 - given k, v and z it is infeasible for an attacker to solve the equation ```C(k, v, g1(x1)...gr(xr)) = z``` (given access to each g function),
 provided it is also infeasible for them to invert the g functions themselves.
 
-## Signature generation
+### Signature generation
 
 **Step 1**: compute ```k = H(m)```
 
@@ -72,7 +72,7 @@ This means using the random ```xi``` as replacements for the private keys you do
 
 The signature is the set of public keys P, the glue v and the set of X values you computed, including your own.
 
-## Signature verification
+### Signature verification
 
 The verification is quite trivial and is also based on the solutions of the ring equation:
 
@@ -83,7 +83,7 @@ k = h(m)
 
 then you verify that the equation with C (called _ring equation_) is satisfied with the given parameters.
 
-## Security
+### Security
 
 The anonymity is guaranteed by the fact that the ring equation, when k and v are fixed, has ```(2^b)^(r-1)``` solutions, and each of them
 can be chosen with equal probability by the signing procedure, since it is based on random numbers.
@@ -99,7 +99,7 @@ our purposes it can just run the signature procedure. Then we build B from that 
 that it actually inverts g. This looks like a new crypto challenge in the making and I am already excited! The procedure described for building B was not 100% clear to me upon reading the paper, so it will require more careful study. I will let you know if I succeed in this adventure;
 I could even propose this as a new challenge for the Matasano team to add to their website.
 
-## Conclusion
+### Conclusion
 
 One interesting improvement of the AOS ring signature scheme (the one used in the original article) is that it works with signers that use
 different keypair generation functions. It uses something called Schnorr signature as the basis, and then "chains" multiple signatures together
