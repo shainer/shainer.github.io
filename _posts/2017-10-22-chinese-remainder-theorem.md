@@ -49,10 +49,10 @@ x = a1 (mod n1)
 x = a2 (mod n2)
 ```
 
-As above, let's define ```N = n1 * n2````.
+As above, let's define ```N = n1 * n2```.
 
 Let's define ```p = n1^-1 (mod n2)``` and ```q = n2^-1 (mod n1)```. This is the
-operation called ```modular inverse```, where we find the inverse of a number in
+operation called **modular inverse**, where we find the inverse of a number in
 the group of numbers mod N. If I say that p and n1 are inverse in mod n2, this
 means that ```p * n1 = 1 (mod n2)```. Such inverse will only exist when n1 and
 n2 are coprimes, and here they are by definition.
@@ -281,9 +281,9 @@ def invmod(a, m):
 ## References
 
 Several websites contributed to me getting to the bottom of this interesting
-theorem:
+theorem and provided the numerical examples I use above:
 
-- https://en.wikipedia.org/wiki/Chinese_remainder_theorem
-- https://crypto.stanford.edu/pbc/notes/numbertheory/crt.html
-- https://www.di-mgt.com.au/crt.html
-- https://www.youtube.com/watch?v=fz1vxq5ts5I
+- [Wikipedia page](https://en.wikipedia.org/wiki/Chinese_remainder_theorem)
+- [Stanford university explanation](https://crypto.stanford.edu/pbc/notes/numbertheory/crt.html)
+- [More details on the Gauss algorithm](https://www.di-mgt.com.au/crt.html)
+- [Tutorial video on the modular inverse computation](https://www.youtube.com/watch?v=fz1vxq5ts5I)
