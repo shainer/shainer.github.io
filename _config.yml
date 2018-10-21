@@ -9,8 +9,7 @@
 title: Shainer's Site
 email: shainer@chakralinux.org
 description: > # this means to ignore newlines until "baseurl:"
-  Random stuff I find interesting or I am working on. At some point I will
-  move all the content from my old website, giudoku.sourceforge.net, here.
+  Random stuff I find interesting or I am working on.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://shainer.github.io" # the base hostname & protocol for your site
 github_username:  shainer

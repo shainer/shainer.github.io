@@ -20,8 +20,8 @@ the new package manager for the distribution. I am currently contributing to [Ca
 the generic installer framework used by Chakra, among other distributions.
 
 This website contains some work I have done during these years. The most important personal projects can be
-found on my Github repository. Some others can be found in my [old website](http://www.giudoku.sourceforge.net)
-or on [Bitbucket](http://bitbucket.org/shainer), but I have plans to move everything to Github at some point.
+found on my Github repository. Some others can be found on [Bitbucket](http://bitbucket.org/shainer),
+but I have plans to move everything to Github at some point.
 
 My non-computer interests include reading fantasy and science-fiction, baking, physics, and logic or math puzzles.
 
