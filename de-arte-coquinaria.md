@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Libro de arte coquinaria: English translation
+title: Libro de arte coquinaria, English translation
 permalink: /de-arte-coquinaria/
 ---
 
