@@ -17,6 +17,5 @@ and editing; I might do so and release an improved version in the future.
 
 [Click here to download the translation in PDF format]({{ site.url }}/downloads/libro-de-arte-coquinaria-english-translation.pdf).
 
-[Creative Commons License]({{ site.url }}/images/cc_license.png)
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
