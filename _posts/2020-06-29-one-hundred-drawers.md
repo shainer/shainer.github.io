@@ -83,21 +83,21 @@ Some terminology: let's call n the total number of elements (10 in our problem) 
 
 If a permutation has a cycle with length k > n/2, it must have only one of them, for obvious reasons. My intuition told me that counting the permutations that have one cycle bigger than n/2 would therefore be easier, since I don't need to care about the other cycles such permutations contain.
 
-**Claim**: for every k > n/2, the number of permutations with a cycle of length k is [formula 1]({{ site.url }}/images/formula1.png)
+**Claim**: for every k > n/2, the number of permutations with a cycle of length k is [formula 1]({{ site.url }}/images/one_hundred_drawers/formula1.png)
 
 Let's focus on a single value of k (doesn't matter which one). Combinatorics tells me how many ways I have of selecting k elements from a larger set of n elements, when the order of the elements matter:
 
-[formula 2]({{ site.url }}/images/formula2.png)
+[formula 2]({{ site.url }}/images/one_hundred_drawers/formula2.png)
 
 Now I have selected k elements. There are k! permutations of such elements; how many of them can be considered one big cycle? In other words, how many permutations of k elements are a cyclic permutation? Let's say that it is our convention to always look at cycles as starting from element a, despite its actual position in the list; this works because I can always "rotate" my cycle to place a wherever I want. Then, I can permute all the remaining elements in any way and still get a cycle. This means that the number of cyclic permutations is (k-1)!
 
 Combining the two things together, I select k elements and then arrange them in a cycle in any way possible. This gives me this many combinations:
 
-[formula 3]({{ site.url }}/images/formula3.png)
+[formula 3]({{ site.url }}/images/one_hundred_drawers/formula3.png)
 
 But wait, I have other (n-k) elements in my original set. Once I've established that a given permutation has a cycle of length k, I don't really care how the remaining (n-k) elements are arranged, i.e. any possible arrangement still gives me a "valid" permutation. So the above expression becomes:
 
-[formula 4]({{ site.url }}/images/formula4.png)
+[formula 4]({{ site.url }}/images/one_hundred_drawers/formula4.png)
 
 which gives me the stated result after simplifications.
 
@@ -105,7 +105,7 @@ Now if I were to be fancy, I would go ahead and look at how the formula works fo
 
 Ok, claim proved. Now, I have a formula for the number of permutations with a cycle of length k; as mentioned, I need to sum this over all values of k from n/2+1 up to n.
 
-[formula 5]({{ site.url }}/images/formula5.png)
+[formula 5]({{ site.url }}/images/one_hundred_drawers/formula5.png)
 
 1/k for a given value of k is called **harmonic number**, or H(k). The sum above comes up to H(n) - H(n/2 + 1). I am not sure if there's an efficient formula for a generic H(k), but worst case you can always compute the whole sum.
 
@@ -113,6 +113,6 @@ This final value also featured on on-line encyclopedia of integer sequences: htt
 
 Having computed the number of permutations of n elements with a cycle of length greater than n/2, I need the opposite: I need all the permutations that DON'T have a cycle of length greater than n/2, which means subtracting this formula I've just found to the total number of permutations of n elements (n!).
 
-[formula 6]({{ site.url }}/images/formula6.png)
+[formula 6]({{ site.url }}/images/one_hundred_drawers/formula6.png)
 
 And finally you can be fancy and compute percentages and whatnot. I'll leave that to you :) Plugging the numbers for the problem with 10 drawers gives about 35%, as promised. Plugging the numbers for n=12 already yields something noticeably smaller, about 34.6%. I can assume this gets even smaller as n increases, and settles to around 30% by the time n gets to 100. Why is that? I don't know :) maybe that could be homework for next time...
